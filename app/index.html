@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html ng-app="app">
+<head>
+  <title>doIt</title>
+  <link rel="stylesheet" type="text/css" href="css/normalize.css">
+  <link rel="stylesheet" type="text/css" href="css/main.css">
+</head>
+<body>
+  <div class="wrapper" ui-view ng-controller="Controller as vm">
+    <h2>This is my list app</h2>
+    <form ng-submit="vm.addItem(item)">
+      <input type="text" placeholder="new Todo" ng-model="item.title" required>
+      <button>Add Item</button>
+    </form>
+    <ul>
+      
+      <li ng-repeat="item in vm.items" ng-style="completed">
+        <input type="checkbox" ng-model="item.done" ng-click="completed={'text-decoration': 'line-through'}">
+        {{item.title}}
+      </li>
+    </ul>
+
+    <button ng-click = "vm.clearCompleted()">Clear Completed Items</button>
+  </div>
+  
+  <script src="js/main.js"></script>
+</body>
+</html>

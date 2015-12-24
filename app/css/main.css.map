@@ -1,0 +1,1 @@
+{"version":3,"sources":["main.scss"],"names":[],"mappings":"AAGA,QAAQ,CAAA;EACN,KAAK,EAAE,GAAI;EACX,MAAM,EAAE,MAAO;EACf,UAAU,EAAE,OAAQ,GACrB","file":"main.css","sourcesContent":["// Put any @imports here\n// See Readme for a list of supported ones\n\n.wrapper{\n  width: 60%;\n  margin: 0 auto;\n  background: #e2ebf3;\n}\n"],"sourceRoot":"/source/"}
