@@ -10,13 +10,14 @@ let Controller = function() {
       done: false
     }
   ];
+  console.log(vm.items);
 
   vm.addItem = addItem;
   vm.clearCompleted = clearCompleted;
 
 
   function addItem (item) {
-    vm.items.push({'title': item.title, 'done': false});
+    vm.items.push({'title': item.title, 'done': item.done = false});
     item.title = '';
   }
 
