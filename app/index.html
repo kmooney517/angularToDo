@@ -14,9 +14,9 @@
     </form>
     <ul>
       
-      <li ng-repeat="item in vm.items" ng-style="completed">
-        <input type="checkbox" ng-model="item.done" ng-click="completed={'text-decoration': 'line-through'}">
-        {{item.title}}
+      <li ng-repeat="item in vm.items">
+        <input type="checkbox" ng-model="item.done">
+        <span ng-class="{lineThrough: item.done}">{{item.title}}</span>
       
       </li>
     </ul>

@@ -3,4 +3,11 @@
   margin: 0 auto;
   background: #e2ebf3; }
 
+li {
+  list-style: none; }
+
+.lineThrough {
+  text-decoration: line-through;
+  color: #ccc; }
+
 /*# sourceMappingURL=main.css.map */

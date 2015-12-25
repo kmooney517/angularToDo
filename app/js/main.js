@@ -28923,15 +28923,12 @@ var Controller = function Controller() {
   }];
 
   vm.addItem = addItem;
-  vm.deleteItem = deleteItem;
   vm.clearCompleted = clearCompleted;
 
   function addItem(item) {
     vm.items.push({ 'title': item.title, 'done': false });
     item.title = '';
   }
-
-  function deleteItem() {}
 
   function clearCompleted() {
     vm.items = vm.items.filter(function (items) {
